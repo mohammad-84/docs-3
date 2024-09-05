@@ -1,6 +1,6 @@
 # syntax = docker/dockerfile:1
 
-FROM ruby:slim as base
+FROM ruby:3.3.5-slim-bookworm as base
 
 RUN apt-get update &&\
     apt-get install --yes git curl build-essential
